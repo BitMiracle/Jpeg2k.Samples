@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageInfo", "ImageInfo\C#\I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeJpeg2000", "DecodeJpeg2000\C#\DecodeJpeg2000.csproj", "{D5B79587-9850-4C14-AD73-CE75271330FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeTile", "DecodeTile\C#\DecodeTile.csproj", "{97D07FBF-F460-4C66-823F-A856EF610883}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D5B79587-9850-4C14-AD73-CE75271330FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5B79587-9850-4C14-AD73-CE75271330FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5B79587-9850-4C14-AD73-CE75271330FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D07FBF-F460-4C66-823F-A856EF610883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97D07FBF-F460-4C66-823F-A856EF610883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97D07FBF-F460-4C66-823F-A856EF610883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97D07FBF-F460-4C66-823F-A856EF610883}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
