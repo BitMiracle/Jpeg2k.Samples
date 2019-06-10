@@ -87,6 +87,15 @@
             </para>
       </remarks>
     </member>
+    <member name="P:BitMiracle.Jpeg2k.J2kDecodingOptions.ThreadCount">
+      <summary>
+            Gets or sets the number of threads to use for decoding.
+            </summary>
+      <remarks>
+        <para>Default value: 1</para>
+        <para>The value should be greater than or equal to <c>1</c>.</para>
+      </remarks>
+    </member>
     <member name="T:BitMiracle.Jpeg2k.J2kEncodingOptions">
       <summary>
             The options to use when creating a JPEG 2000 image.
