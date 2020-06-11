@@ -16,6 +16,13 @@ Module DecodeJpeg2000WithMemoryLimit
                 Dim tileWidth As Integer = roundUp(Math.Min(2000, image.Width / 5), 16)
                 Dim tileHeight As Integer = roundUp(Math.Min(2000, image.Height / 5), 16)
 
+                outputTiff.SetField(TiffTag.IMAGEWIDTH, image.Width)
+                outputTiff.SetField(TiffTag.IMAGELENGTH, image.Height)
+                outputTiff.SetField(TiffTag.ORIENTATION, Orientation.TOPLEFT)
+                outputTiff.SetField(TiffTag.PLANARCONFIG, PlanarConfig.CONTIG)
+                outputTiff.SetField(TiffTag.TILEWIDTH, tileWidth)
+                outputTiff.SetField(TiffTag.TILELENGTH, tileHeight)
+
                 Dim tileStripSize As Integer = 0
                 Dim tileData As Byte() = Nothing
                 Dim options = New J2kDecodingOptions()
@@ -33,17 +40,14 @@ Module DecodeJpeg2000WithMemoryLimit
 
                             If x = 0 AndAlso y = 0 Then
                                 Dim samplesPerPixel As Integer = tileTiff.GetField(TiffTag.SAMPLESPERPIXEL)(0).ToInt()
-                                Dim bitsPerSample As Integer = tileTiff.GetField(TiffTag.BITSPERSAMPLE)(0).ToInt()
-                                Dim photometric As Integer = tileTiff.GetField(TiffTag.PHOTOMETRIC)(0).ToInt()
-                                outputTiff.SetField(TiffTag.IMAGEWIDTH, image.Width)
-                                outputTiff.SetField(TiffTag.IMAGELENGTH, image.Height)
-                                outputTiff.SetField(TiffTag.BITSPERSAMPLE, bitsPerSample)
                                 outputTiff.SetField(TiffTag.SAMPLESPERPIXEL, samplesPerPixel)
-                                outputTiff.SetField(TiffTag.ORIENTATION, Orientation.TOPLEFT)
-                                outputTiff.SetField(TiffTag.PLANARCONFIG, PlanarConfig.CONTIG)
+
+                                Dim bitsPerSample As Integer = tileTiff.GetField(TiffTag.BITSPERSAMPLE)(0).ToInt()
+                                outputTiff.SetField(TiffTag.BITSPERSAMPLE, bitsPerSample)
+
+                                Dim photometric As Integer = tileTiff.GetField(TiffTag.PHOTOMETRIC)(0).ToInt()
                                 outputTiff.SetField(TiffTag.PHOTOMETRIC, photometric)
-                                outputTiff.SetField(TiffTag.TILEWIDTH, tileWidth)
-                                outputTiff.SetField(TiffTag.TILELENGTH, tileHeight)
+
                                 tileStripSize = tileTiff.StripSize()
                                 tileData = New Byte(tileTiff.NumberOfStrips() * tileStripSize - 1) {}
                             End If

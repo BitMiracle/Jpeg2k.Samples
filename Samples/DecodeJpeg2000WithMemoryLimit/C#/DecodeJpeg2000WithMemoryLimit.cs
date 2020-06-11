@@ -22,6 +22,13 @@ namespace DecodeJpeg2000WithMemoryLimit
                     int tileWidth = roundUp(Math.Min(2000, image.Width / 5), 16);
                     int tileHeight = roundUp(Math.Min(2000, image.Height / 5), 16);
 
+                    outputTiff.SetField(TiffTag.IMAGEWIDTH, image.Width);
+                    outputTiff.SetField(TiffTag.IMAGELENGTH, image.Height);
+                    outputTiff.SetField(TiffTag.ORIENTATION, Orientation.TOPLEFT);
+                    outputTiff.SetField(TiffTag.PLANARCONFIG, PlanarConfig.CONTIG);
+                    outputTiff.SetField(TiffTag.TILEWIDTH, tileWidth);
+                    outputTiff.SetField(TiffTag.TILELENGTH, tileHeight);
+
                     int tileStripSize = 0;
                     byte[] tileData = null;
                     var options = new J2kDecodingOptions();
@@ -37,18 +44,13 @@ namespace DecodeJpeg2000WithMemoryLimit
                                 if (x == 0 && y == 0)
                                 {
                                     int samplesPerPixel = tileTiff.GetField(TiffTag.SAMPLESPERPIXEL)[0].ToInt();
-                                    int bitsPerSample = tileTiff.GetField(TiffTag.BITSPERSAMPLE)[0].ToInt();
-                                    int photometric = tileTiff.GetField(TiffTag.PHOTOMETRIC)[0].ToInt();
-
-                                    outputTiff.SetField(TiffTag.IMAGEWIDTH, image.Width);
-                                    outputTiff.SetField(TiffTag.IMAGELENGTH, image.Height);
-                                    outputTiff.SetField(TiffTag.BITSPERSAMPLE, bitsPerSample);
                                     outputTiff.SetField(TiffTag.SAMPLESPERPIXEL, samplesPerPixel);
-                                    outputTiff.SetField(TiffTag.ORIENTATION, Orientation.TOPLEFT);
-                                    outputTiff.SetField(TiffTag.PLANARCONFIG, PlanarConfig.CONTIG);
+
+                                    int bitsPerSample = tileTiff.GetField(TiffTag.BITSPERSAMPLE)[0].ToInt();
+                                    outputTiff.SetField(TiffTag.BITSPERSAMPLE, bitsPerSample);
+
+                                    int photometric = tileTiff.GetField(TiffTag.PHOTOMETRIC)[0].ToInt();
                                     outputTiff.SetField(TiffTag.PHOTOMETRIC, photometric);
-                                    outputTiff.SetField(TiffTag.TILEWIDTH, tileWidth);
-                                    outputTiff.SetField(TiffTag.TILELENGTH, tileHeight);
 
                                     tileStripSize = tileTiff.StripSize();
                                     tileData = new byte[tileTiff.NumberOfStrips() * tileStripSize];
