@@ -10,7 +10,7 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("DecodeJpeg2000WithMemoryLimit")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyCompany("Bit Miracle")>
 <Assembly: AssemblyProduct("DecodeJpeg2000WithMemoryLimit")>
 <Assembly: AssemblyCopyright("Copyright © 2020 Bit Miracle")>
 <Assembly: AssemblyTrademark("")>

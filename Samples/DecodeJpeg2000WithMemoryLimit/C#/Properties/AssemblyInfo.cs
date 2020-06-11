@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("DecodeJpeg2000WithMemoryLimit")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Bit Miracle")]
 [assembly: AssemblyProduct("DecodeJpeg2000WithMemoryLimit")]
 [assembly: AssemblyCopyright("Copyright © 2020 Bit Miracle")]
 [assembly: AssemblyTrademark("")]

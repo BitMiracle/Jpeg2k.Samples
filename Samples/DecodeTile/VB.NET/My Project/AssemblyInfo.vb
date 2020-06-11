@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("DecodeTile")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyCompany("Bit Miracle")>
 <Assembly: AssemblyProduct("DecodeTile")>
-<Assembly: AssemblyCopyright("Copyright ©  2018")>
+<Assembly: AssemblyCopyright("Copyright © 2018 - 2020 Bit Miracle")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>

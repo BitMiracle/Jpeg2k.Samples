@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("CreateJpeg2000")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyCompany("Bit Miracle")>
 <Assembly: AssemblyProduct("CreateJpeg2000")>
-<Assembly: AssemblyCopyright("Copyright ©  2018")>
+<Assembly: AssemblyCopyright("Copyright © 2018 - 2020 Bit Miracle")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
