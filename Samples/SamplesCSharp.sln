@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2043
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageInfo", "ImageInfo\C#\ImageInfo.csproj", "{311F76E7-A795-4CF9-A60E-C1B117727204}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateJpeg2000", "CreateJpeg2000\C#\CreateJpeg2000.csproj", "{06C552B6-53EE-4A20-980A-02EE4701E8B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeJpeg2000WithMemoryLimit", "DecodeJpeg2000WithMemoryLimit\C#\DecodeJpeg2000WithMemoryLimit.csproj", "{AEC49312-539A-4F42-ADA1-143E2D76ECB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadDecodedPixels", "ReadDecodedPixels\C#\ReadDecodedPixels.csproj", "{E7E51E89-8AAB-4DCB-A686-BA8F57CC075A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{AEC49312-539A-4F42-ADA1-143E2D76ECB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEC49312-539A-4F42-ADA1-143E2D76ECB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEC49312-539A-4F42-ADA1-143E2D76ECB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E51E89-8AAB-4DCB-A686-BA8F57CC075A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E51E89-8AAB-4DCB-A686-BA8F57CC075A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E51E89-8AAB-4DCB-A686-BA8F57CC075A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E51E89-8AAB-4DCB-A686-BA8F57CC075A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
