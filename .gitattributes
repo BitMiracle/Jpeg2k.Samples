@@ -1,3 +1,6 @@
+# Do no exclude Samples from language detection
+Samples/** linguist-documentation=false
+
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
