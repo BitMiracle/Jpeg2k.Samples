@@ -544,7 +544,7 @@
             from the specified file.</returns>
       <remarks>
         <para>The file should contain image in one of the supported formats.</para>
-        <para>At this time supported image formats are BMP and TIFF.</para>
+        <para>At this time supported image formats are BMP, JPEG, and TIFF.</para>
       </remarks>
       <overloads>
             Creates a new instance of the <see cref="T:BitMiracle.Jpeg2k.J2kImageData" /> class by importing image.
@@ -561,7 +561,7 @@
             from the specified file.</returns>
       <remarks>
         <para>The file should contain image in one of the supported formats.</para>
-        <para>At this time supported image formats are BMP and TIFF.</para>
+        <para>At this time supported image formats are BMP, JPEG, and TIFF.</para>
       </remarks>
     </member>
     <member name="M:BitMiracle.Jpeg2k.J2kImageData.FromImage(System.IO.Stream)">
@@ -574,7 +574,7 @@
             from the specified file.</returns>
       <remarks>
         <para>The stream should contain image in one of the supported formats.</para>
-        <para>At this time supported image formats are BMP and TIFF.</para>
+        <para>At this time supported image formats are BMP, JPEG, and TIFF.</para>
         <para>The stream will not be owned or disposed by this object. The caller of this
             method should dispose the stream himself.</para>
       </remarks>
@@ -590,7 +590,7 @@
             from the specified file.</returns>
       <remarks>
         <para>The stream should contain image in one of the supported formats.</para>
-        <para>At this time supported image formats are BMP and TIFF.</para>
+        <para>At this time supported image formats are BMP, JPEG, and TIFF.</para>
         <para>The stream will not be owned or disposed by this object. The caller of this
             method should dispose the stream himself.</para>
       </remarks>
@@ -868,7 +868,8 @@
             Applies permanent license.
             </summary>
       <param name="licenseKey">License key</param>
-            /// <param name="owner">Identifier of the license owner</param></member>
+      <param name="owner">Identifier of the license owner</param>
+    </member>
     <member name="M:BitMiracle.Jpeg2k.LicenseManager.SetTrialLicense(System.String)">
       <summary>
             Applies trial license.
