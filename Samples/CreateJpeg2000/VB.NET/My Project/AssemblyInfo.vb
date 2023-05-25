@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("Bit Miracle")>
 <Assembly: AssemblyProduct("CreateJpeg2000")>
-<Assembly: AssemblyCopyright("Copyright © 2018 - 2022 Bit Miracle")>
+<Assembly: AssemblyCopyright("Copyright © 2018 - 2023 Bit Miracle")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
