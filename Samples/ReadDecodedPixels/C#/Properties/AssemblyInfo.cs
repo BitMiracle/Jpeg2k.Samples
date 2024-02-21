@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Bit Miracle")]
 [assembly: AssemblyProduct("ReadDecodedPixels")]
-[assembly: AssemblyCopyright("Copyright © 2018 - 2023 Bit Miracle")]
+[assembly: AssemblyCopyright("Copyright © 2018 - 2024 Bit Miracle")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
