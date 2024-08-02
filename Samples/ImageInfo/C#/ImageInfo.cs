@@ -9,7 +9,7 @@ namespace ImageInfo
         {
             // The library won't work without a license. You can get free time limited license
             // at https://bitmiracle.com/jpeg2000/
-            LicenseManager.SetTrialLicense("contact support@bitmiracle.com for a license"); 
+            LicenseManager.SetTrialLicense("contact support@bitmiracle.com for a license");
 
             string fileName = @"Sample data/a1_mono.j2c";
             using (var image = new J2kImage(fileName))
