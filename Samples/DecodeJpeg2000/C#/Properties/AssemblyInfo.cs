@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Bit Miracle")]
 [assembly: AssemblyProduct("DecodeJpeg2000")]
-[assembly: AssemblyCopyright("Copyright © 2018 - 2024 Bit Miracle")]
+[assembly: AssemblyCopyright("Copyright © 2018 - 2025 Bit Miracle")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
